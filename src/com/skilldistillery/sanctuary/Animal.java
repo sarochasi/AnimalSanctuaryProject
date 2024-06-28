@@ -11,5 +11,11 @@ public class Animal {
 		this.name = name;
 	}
 	
+	public void makeNoise() {
+		System.out.println();
+	}
 	
+	public void eat(int amount) {
+		System.out.println("I'm eating " + amount + " foods");
+	}
 }
