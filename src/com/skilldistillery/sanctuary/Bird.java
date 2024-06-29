@@ -1,11 +1,12 @@
 package com.skilldistillery.sanctuary;
 
-public class Lion extends Animal{
-	private static String noise = "ROARRRR";
+public class Bird extends Animal{
+	private static String noise = "Chirps!!!";
 	
-	public Lion(String name) {
+	public Bird(String name) {
 		super.setName(name);
 	}
+	
 	@Override
 	public void makeNoise() {
 		System.out.println(noise);
@@ -14,8 +15,6 @@ public class Lion extends Animal{
 	
 	public void eat(int amount) {
 		System.out.println(noise);
-		System.out.println("I'm chomping " + amount + " pounds of meat\n");
-		
+		System.out.println("I love eating " + amount + " pounds of food\n");
 	}
-
 }

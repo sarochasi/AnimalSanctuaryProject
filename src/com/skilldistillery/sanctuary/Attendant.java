@@ -5,11 +5,12 @@ import java.util.Random;
 public class Attendant {
 
 	public void makeRounds(Animal[] animals) {
-		int amount = (int)(Math.random() * 10);
 		
 		for (Animal animal : animals) {
+			
 			if( animal != null) {
-				System.out.println("I will feed " + animal.getName() + amount + " foods");
+				int amount = (int)((Math.random() * 10) + 1);
+				System.out.println("I will feed " + animal.getName() + " " + amount + " foods");
 				
 				animal.eat(amount);
 			}

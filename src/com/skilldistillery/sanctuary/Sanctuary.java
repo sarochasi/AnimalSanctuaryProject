@@ -23,16 +23,18 @@ public class Sanctuary {
 		}
 		
 	}
-	public void addAimal(Animal animal) {
+	public void addAnimal(Animal animal) {
 		
 		for (int i = 0; i < animals.length; i++) {
 			if (animals[i] == null) {
 				animals[i] = animal;
 				System.out.println(animal.getName() + " has been added");
+				break;
 			}
 			
 			if (animals[animals.length-1] != null) {
 				System.out.println("Sorry, the sanctuary is full.");
+				break;
 			}
 			
 		}
