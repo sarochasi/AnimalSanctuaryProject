@@ -12,7 +12,7 @@ public class Animal {
 	}
 	
 	public void makeNoise() {
-		System.out.println();
+		
 	}
 	
 	public void eat(int amount) {
